@@ -1,0 +1,49 @@
+.header-container {
+    background: var(--text-primary);
+    height: 5.5rem;
+    display: flex;
+    align-items: center;
+    padding: 2rem 4rem;
+    border-bottom: 2px solid var(--gray-100);
+    justify-content: space-between;
+
+    .brand-name {
+        #contrast {
+            color: var(--button-primary);
+        }
+        span {
+            font-size: 1.75rem;
+            color: var(--white);
+        }
+    }
+
+    .informations {
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        
+        #about, #register-products {
+        font-size: 1.15rem;
+        color: var(--white);
+        padding: 1rem;
+        }
+        
+        #about:hover {
+            transition: all .2s;
+            color: var(--button-primary);
+        }
+
+        #register-product {
+            color: var(--white);
+            background: var(--button-primary);
+            border-radius: 16px;
+            padding: 0.75rem;
+            margin-left: 2rem;
+            transition: .25s;
+        }
+        
+        #register-product:hover {
+            background: #cc702f;
+        }
+    }
+}

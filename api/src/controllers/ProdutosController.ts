@@ -27,6 +27,19 @@ class ProdutosController {
         }
     }
 
+    async listarProdutosPorNome(req: Request, res: Response): Promise<Response> {
+        const { nome } = req.body;
+        const produtosService = new ProdutosService();
+        try {
+            const produtos = await produtosService.listarProdutosPorNome(nome);
+            return res.json(produtos);
+        } catch (err) {
+            return res.status(404).json({
+                message: err.message
+            })
+        }
+    }
+
     async cadastrarProduto(req: Request, res: Response): Promise<Response> {
         const { nome, preco, fabricante, qtdDisponivel, categoria, thumbnail } = req.body;
         const produtosService = new ProdutosService();

@@ -21,11 +21,21 @@ class ProdutosService {
         return listaProdutos;
     }
 
+    async listarProdutosPorNome(nome: string) {
+        const produtosRef = db.collection('produtos');
+        let lista = [];
+        const listaProdutosPorNome = await produtosRef.where('nome', '==', nome).get();
+        if (listaProdutosPorNome.empty) { throw new Error("Não há produtos com esse nome cadastrados") }
+        listaProdutosPorNome.forEach(doc => {
+            lista.push(doc.data());
+        })
+        return lista;
+    }
+
     async exibirProdutoPorReferencia(referencia: string) {
         const produtosRef = db.collection('produtos');
         let dadosProduto = null;
         let produto = await produtosRef.where('referencia', '==', referencia).get();
-        if (produto.empty) { throw new Error("Não há produtos cadastrados") }
         produto.forEach(doc => {
             dadosProduto = doc.data();
         })
@@ -91,7 +101,7 @@ class ProdutosService {
                 default:
                     throw new Error("Parâmetro inválido.")
             }
-            await produtoRef.update({atualizadoEm: new Date()})
+            await produtoRef.update({ atualizadoEm: new Date() })
         }
     }
 }

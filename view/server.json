@@ -1,0 +1,64 @@
+{
+    "produtos": [
+        {
+            "referencia": "2033e9cw-6360-4ffd-8d4c-a0a223d7254d",
+            "nome": "Naruto Gold - Vol. 1",
+            "fabricante": "Masashi Kishimoto",
+            "categoria": "HQ's e Mangás",
+            "preco": 24.50,
+            "qtdDisponivel": 85,
+            "atualizadoEm": "1625571478",
+            "thumbnail": "https://firebasestorage.googleapis.com/v0/b/prodalest.appspot.com/o/91xUwI2UEVL.jpg?alt=media&token=1c95df35-2941-4852-a94a-9e419e4aae0e"
+        },
+        {
+            "referencia": "fea87c1c-de4e-11eb-ba80-0242ac130004",
+            "nome": "Naruto Gold - Vol. 5",
+            "fabricante": "Masashi Kishimoto",
+            "categoria": "HQ's e Mangás",
+            "preco": 20.70,
+            "qtdDisponivel": 98,
+            "atualizadoEm": "1625571478",
+            "thumbnail": "https://firebasestorage.googleapis.com/v0/b/prodalest.appspot.com/o/91AvEVbeDhL.jpg?alt=media&token=8af402d8-c7e5-4a02-889e-49630d565b20"
+        },
+        {
+            "referencia": "17b9f942-de4f-11eb-ba80-0242ac130004",
+            "nome": "Naruto Gold - Vol. 2",
+            "fabricante": "Masashi Kishimoto",
+            "categoria": "HQ's e Mangás",
+            "preco": 15.40,
+            "qtdDisponivel": 85,
+            "atualizadoEm": "1625571478",
+            "thumbnail": "https://firebasestorage.googleapis.com/v0/b/prodalest.appspot.com/o/81nFG%2BaE64L.jpg?alt=media&token=899d9202-fbd9-45d8-aac5-345dcf85b42c"
+        },
+        {
+            "referencia": "2033e9cb-6360-4ffd-8d4c-a0a223d7254d",
+            "nome": "Revolução dos bichos",
+            "fabricante": "George Orwell",
+            "categoria": "Livros",
+            "preco": 26.75,
+            "qtdDisponivel": 148,
+            "atualizadoEm": "1625571478",
+            "thumbnail": "https://firebasestorage.googleapis.com/v0/b/prodalest.appspot.com/o/81D0qNDMqPL.jpg?alt=media&token=1be48b4b-fc59-488a-aae7-ee793b736256"
+        },
+        {
+            "referencia": "816e8754-de4f-11eb-ba80-0242ac130004",
+            "nome": "Naruto Gold - Vol. 3",
+            "fabricante": "Masashi Kishimoto",
+            "categoria": "HQ's e Mangás",
+            "preco": 17.50,
+            "qtdDisponivel": 120,
+            "atualizadoEm": "1625571478",
+            "thumbnail": "https://firebasestorage.googleapis.com/v0/b/prodalest.appspot.com/o/79365_520x520.jpg?alt=media&token=acf653f8-ee9f-4a3d-8e3f-54d98b7defd1"
+        },
+        {
+            "referencia": "2033e9cb-6360-4ffd-8d4c-a0a223d7254d",
+            "nome": "1984",
+            "fabricante": "George Orwell",
+            "categoria": "Livros",
+            "preco": 32.85,
+            "qtdDisponivel": 104,
+            "atualizadoEm": "1625571478",
+            "thumbnail": "https://firebasestorage.googleapis.com/v0/b/prodalest.appspot.com/o/51VXYaKO-sL._SX346_BO1%2C204%2C203%2C200_.jpg?alt=media&token=c08e5129-6904-4f16-bdcd-168d8db21dd9"
+        }
+    ]
+}
