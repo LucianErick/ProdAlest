@@ -1,4 +1,5 @@
 import './styles.scss';
+import { Link } from 'react-router-dom';
 
 export function Home() {
     return (
@@ -6,7 +7,7 @@ export function Home() {
             <div className="text">
                 <h1>Bem vinde ao soLivros!</h1>
                 <h2>Aqui você pode adicionar, pesquisar, editar e remover livros</h2>
-                <a href="#" id="search-button">Pesquisar livros</a>
+                <Link to="/pesquisar" id="search-button">Pesquisar livros</Link>
             </div>
             <div className="illustration">
                 <img src="/reading-book.svg" alt="Lendo livros"/>

@@ -1,21 +1,33 @@
-type Product = {
-    nome: string,
-    fabricante: string,
-    categoria: string,
-    preco: number,
-    qtdDisponivel: number,
-    thumbnail: string
+import { Product } from "../../types/types";
+import './styles.scss';
 
+type Props = {
+    product: Product;
 }
 
-export function Card(product: Product) {
+export function Card({ product }: Props) {
+    const price = product.preco.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' });
     return (
         <div className="card-container">
-            <img src={product.thumbnail} alt={product.nome}/>
-            <span className="product-name">{product.nome}</span>
-            <span className="product-category">{product.categoria}</span>
-            <span className="product-author">{product.fabricante}</span>
-            <span className="product-price">{product.preco}</span>
+            <img src={product.thumbnail} alt={product.nome} />
+            <div className="no-img-infos">
+                <div className="infos">
+                    <h1 className="product-name">{product.nome}</h1>
+                    <div className="book-information">
+                        <p className="product-category">{product.categoria}</p>
+                        <p className="product-author">{product.fabricante}</p>
+                    </div>
+                    <p className="product-price">{price}</p>
+                </div>
+                <div className="options-button">
+                    <button id="delete">
+                        <img src="./delete.svg" alt="Excluir produto" />
+                    </button>
+                    <button>
+                        <img id="edit" src="./edit.svg" alt="Editar produto" />
+                    </button>
+                </div>
+            </div>
         </div>
     );
 }

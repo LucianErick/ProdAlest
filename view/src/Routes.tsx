@@ -4,6 +4,7 @@ import { Header } from './components/Header/header';
 import { About } from './pages/AboutPage';
 import { Home } from './pages/Homepage';
 import { Register } from './pages/RegisterProduct';
+import { Search } from './pages/SearchProducts';
 
 function Routes(){
     return(
@@ -13,6 +14,7 @@ function Routes(){
                 <Route path="/" exact component={Home} />
                 <Route path="/cadastrar" component={Register} />
                 <Route path="/sobre" component={About} />
+                <Route path="/pesquisar" component={Search} />
             </Switch>        
         </BrowserRouter>
     );

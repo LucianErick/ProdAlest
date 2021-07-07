@@ -1,0 +1,55 @@
+.card-container {
+    display: flex;
+    flex-direction: row;
+    background: var(--gray-100);
+    margin-bottom: 1rem;
+    padding: 0.5em;
+    img {
+        max-width: 130px;
+        border-radius: 4px;
+    }
+
+    .no-img-infos {
+        display: flex;
+        flex-direction: column;
+        
+        .infos {
+        margin-left: 0.9rem;
+        
+        h1 {
+            font-size: 1.3rem;
+            margin-bottom: 0.325rem;
+        }
+        
+        .book-information {
+            display: flex;
+            margin-bottom: 1rem;
+            p {
+                font-size: 0.9rem;
+            }
+            
+            p:first-child {
+                margin-right: 1rem;
+            }
+        }
+        
+        .product-price {
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+    }
+
+    .options-button {
+        display: flex;
+    }
+
+    #delete,
+    #edit {
+        width: 1.5rem;
+        color: var(--white);
+    }
+}
+    
+    
+    
+}

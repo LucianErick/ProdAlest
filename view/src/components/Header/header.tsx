@@ -1,5 +1,5 @@
 import './styles.scss';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 export function Header() {
     return (
         <header className="header-container">

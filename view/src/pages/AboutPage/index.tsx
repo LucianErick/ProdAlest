@@ -4,7 +4,7 @@ export function About() {
         <div className="about-container">
             <div className="description">
                 <p>
-                    Aplicação desenvolvida durante o teste de desenvolvimento promovido durante o processo seletivo para estágio na Alest.
+                    Aplicação desenvolvida durante o processo seletivo para estágio em desenvolvimento na Alest.
                 </p>
 
                 <div className="social-medias">
