@@ -1,18 +1,19 @@
-import express from 'express';
-import routes from './routes';
-
+const express = require('express');
 const app = express();
-app.use(express.json());
-app.use(routes);
+const routes = require('routes');
+const cors = require('cors');
 
-export const admin = require('firebase-admin');
-const serviceAccount = require('./database/prodalest-firebase-adminsdk-s2ve6-13a769c064.json');
+// Iniciando comunicação com o bd
+export const admin = require("firebase-admin");
+const serviceAccount = require("../src/database/prodalest-firebase-adminsdk-s2ve6-13a769c064.json");
 admin.initializeApp({
-    credential: admin.credential.cert(serviceAccount)
-})
+  credential: admin.credential.cert(serviceAccount)
+});
 
 export const db = admin.firestore();
 
-app.listen(3333, () => {
-    console.log("The server is running on port 3333!")
-})
+app.use(express.json());
+app.use(routes);
+app.use(cors());
+
+app.listen(3333);
