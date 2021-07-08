@@ -5,8 +5,8 @@ export function Header() {
         <header className="header-container">
             <div className="brand-name">
                 <Link to="/">
-                    <span id="contrast">so</span>
-                    <span>Livros</span>
+                    <span id="contrast">Livr</span>
+                    <span>Alest</span>
                 </Link>
             </div>
             <div className="informations">

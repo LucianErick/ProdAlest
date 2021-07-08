@@ -10,18 +10,17 @@ export function Search() {
     const [products, setProducts] = useState<Product[]>([]);
 
     useEffect(() => {
-        api.get('/produto').then((response) => {
+        api.get('/produtos').then((response) => {
             setProducts(response.data);
-            console.log(response.data)
         })
     }, []);
 
     return (
         <div className="search-products-container">
             <div className="search-header">
-                <form action="">
-                    <input type="text" name="pesquisa" placeholder="Digite o nome de um livro"/>
-                    <button type="submit">
+                <form>
+                    <input type="text" name="pesquisa" placeholder="Digite o nome de um livro" />
+                    <button>
                         <img src="./search-icon.svg" alt="Pesquisar livros" />
                     </button>
                 </form>

@@ -5,7 +5,7 @@ export function Home() {
     return (
         <div className="home-container">
             <div className="text">
-                <h1>Bem vinde ao soLivros!</h1>
+                <h1>Bem vinde à LivrAlest!</h1>
                 <h2>Aqui você pode adicionar, pesquisar, editar e remover livros</h2>
                 <Link to="/pesquisar" id="search-button">Pesquisar livros</Link>
             </div>
