@@ -1,0 +1,46 @@
+.search-products-container {
+    margin-top: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .search-header {
+         width: 60%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+
+         form {
+             display: flex;
+             justify-content: strech;
+             width: 100%;
+            
+             input {
+                width: 85%; 
+                padding: 1.15rem;
+                border-radius: 8px 0 0 8px;
+            }
+
+            button {
+                width: 15%;
+                border-radius: 8px;
+                img {
+                    width: 1.75rem;
+                }
+            }
+
+            button:hover {
+                background: var(--gray-100);
+                transition: all .15s;
+            }
+        }     
+    }
+
+    .search-result {
+        margin-top: 4rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 30px;
+        margin-bottom: 3rem;
+    }
+}

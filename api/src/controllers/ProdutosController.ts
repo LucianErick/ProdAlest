@@ -15,7 +15,7 @@ class ProdutosController {
     }
 
     async exibirProduto(req: Request, res: Response): Promise<Response> {
-        const { referencia } = req.body;
+        const { referencia } = req.params;
         const produtosService = new ProdutosService();
         try {
             const produto = await produtosService.exibirProdutoPorReferencia(referencia);
@@ -28,7 +28,7 @@ class ProdutosController {
     }
 
     async listarProdutosPorNome(req: Request, res: Response): Promise<Response> {
-        const { nome } = req.body;
+        const { nome } = req.params;
         const produtosService = new ProdutosService();
         try {
             const produtos = await produtosService.listarProdutosPorNome(nome);
@@ -67,7 +67,7 @@ class ProdutosController {
     }
 
     async excluirProduto(req: Request, res: Response): Promise<Response> {
-        const { referencia } = req.body;
+        const { referencia } = req.params;
         const produtosService = new ProdutosService();
         try {
             const excluido = await produtosService.excluirProduto(referencia);

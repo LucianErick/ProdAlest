@@ -1,16 +1,18 @@
-import { response } from "express";
+import { request, response } from "express";
 import { useEffect, useState } from "react";
 import { Card } from "../../components/Card";
 import { api } from "../../services/api";
 import { Product } from "../../types/types";
+import './styles.scss';
 
 export function Search() {
 
     const [products, setProducts] = useState<Product[]>([]);
 
     useEffect(() => {
-        api.get('/produtos').then((response) => {
+        api.get('/produto').then((response) => {
             setProducts(response.data);
+            console.log(response.data)
         })
     }, []);
 
@@ -18,7 +20,7 @@ export function Search() {
         <div className="search-products-container">
             <div className="search-header">
                 <form action="">
-                    <input type="text" name="pesquisa" />
+                    <input type="text" name="pesquisa" placeholder="Digite o nome de um livro"/>
                     <button type="submit">
                         <img src="./search-icon.svg" alt="Pesquisar livros" />
                     </button>

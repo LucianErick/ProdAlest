@@ -22,7 +22,7 @@
 
     .register-form {
         display: flex;
-        height: calc(100vh - 17rem);
+        margin-bottom: 3rem;
         justify-content: center;
         flex-direction: column;
         align-items: center;
@@ -31,7 +31,7 @@
             margin-top: 2rem;
             display: grid;
             grid-gap: 20px;
-            grid-template-columns: repeat(auto-fit, 400px);
+            grid-template-columns: repeat(auto-fit, 600px);
             width: 80%;
             height: 60%;
             justify-content: center;

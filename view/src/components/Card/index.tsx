@@ -9,13 +9,15 @@ export function Card({ product }: Props) {
     const price = product.preco.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' });
     return (
         <div className="card-container">
-            <img src={product.thumbnail} alt={product.nome} />
+            <div className="product-thumbnail">
+                <img src={product.thumbnail} alt={product.nome} />
+            </div>
             <div className="no-img-infos">
                 <div className="infos">
                     <h1 className="product-name">{product.nome}</h1>
                     <div className="book-information">
-                        <p className="product-category">{product.categoria}</p>
                         <p className="product-author">{product.fabricante}</p>
+                        <p className="product-category">{product.categoria}</p>
                     </div>
                     <p className="product-price">{price}</p>
                 </div>
