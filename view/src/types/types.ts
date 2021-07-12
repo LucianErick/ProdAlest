@@ -1,5 +1,5 @@
 export type Product = {
-    referencia: string;
+    id: string;
     nome: string,
     fabricante: string,
     categoria: string,

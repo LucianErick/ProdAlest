@@ -19,11 +19,12 @@
                 width: 85%; 
                 padding: 1.15rem;
                 border-radius: 8px 0 0 8px;
+                border: 1px solid var(--gray-100);
             }
 
             button {
                 width: 15%;
-                border-radius: 8px;
+                border-radius: 0 8px 8px 0;
                 img {
                     width: 1.75rem;
                 }

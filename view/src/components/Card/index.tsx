@@ -3,9 +3,10 @@ import './styles.scss';
 
 type Props = {
     product: Product;
+    onDeleteProduct: (product: Product) => void;
 }
 
-export function Card({ product }: Props) {
+export function Card({ product, onDeleteProduct }: Props) {
     const price = product.preco.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' });
     return (
         <div className="card-container">
@@ -22,7 +23,7 @@ export function Card({ product }: Props) {
                     <p className="product-price">{price}</p>
                 </div>
                 <div className="options-button">
-                    <button id="delete">
+                    <button id="delete" onClick={() => onDeleteProduct(product)}>
                         <img src="./delete.svg" alt="Excluir produto" />
                     </button>
                     <button>
